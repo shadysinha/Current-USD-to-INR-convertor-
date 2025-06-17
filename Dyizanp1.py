@@ -13,12 +13,12 @@ if price_element:
     print("price",price_element.text.strip())
     current_value = price_element.text.strip() #here the price is collected from website 
     print("Current Value :", current_value)
-    user_val = int(input("enter the currency in dollars: ")) #value from user 
+    user_val = int(input("enter the currency in dollars 💲: ")) #value from user 
     Main_val = user_val*(float(current_value)) #multiplying current price with the user input  
     print("The value in is INR =",Main_val) 
     now = datetime.now()
-    print("Today's Date and Time: ", now.strftime("%Y-%m-%d %H:%M:%S"))
+    print("Today's Date and Time: ⏰", now.strftime("%Y-%m-%d %H:%M:%S"))
 
 else:
     print("Element not found")
-
+ 
